@@ -99,8 +99,8 @@
                                     }
                                    
                                     .navbar a:hover {
-                                      color: white;
-                                      background-color: #033a80;
+                                      color: #3608a1;
+                                      
                                       
                                     }
                                    
@@ -248,40 +248,54 @@
                                       font-weight: 500;
                                     }
                                    
-                                    .light-bar {
-                                      position: absolute;
-                                      bottom: 0;
-                                      left: 0;
-                                      width: 100%;
-                                      height: 0.5rem;
-                                      background: hsla(260, 100%, 44%, 0.4);
+                                    .container {
+
+                                      
+                                      display: grid;
+                                      grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+                                      justify-content: center;
+                                      gap: 1rem;
+                                      margin-top: 2rem;
+                                    }
+                                   
+                                    .skills-box {
+                                      padding: 20px;
+                                      margin-top: 2rem;
+                                      width: 260px;
+                                      display: flex;
+                                      flex-direction: column;
+                                      align-items: center;
+                                      text-align: center;
                                       border-radius: 0.5rem;
+                                      border-bottom: 2px solid var(--main-color);
+                                      box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
+                                      transition: 0.5s;
+                                    }    
+                                    
+                                    .skills-box .icon {
+
+                                      font-size: 50px;
+                                      
+                                    }
+
+                                   
+                                    .skills-box:hover {
+                                      background-color: #7aa5ee;
+                                      color: #fff;
                                     }
                                    
-                                    .percent-bar {
-                                      position: absolute;
-                                      bottom: 0;
-                                      left: 0;
-                                      height: 0.5rem;
-                                      background: var(--main-color);
-                                      border-radius: 0.5rem;
+                                    .skills-box h3 {
+                                      font-size: 1rem;
+                                      font-weight: 600;
+                                      margin: 0.7rem 0 0.4rem;
                                     }
                                    
-                                    .html-bar {
-                                      width: 94%;
+                                    .skills-box:hover h3 {
+                                      color: #fff;
                                     }
-                                   
-                                    .css-bar {
-                                      width: 84%;
-                                    }
-                                   
-                                    .js-bar {
-                                      width: 74%;
-                                    }
-                                   
-                                    .react-bar {
-                                      width: 80%;
-                                    }
+                                                              
+
+                            
                                    
                                     .services-content {
                                       display: grid;
@@ -303,6 +317,18 @@
                                       box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
                                       transition: 0.5s;
                                     }
+                                    .services-box .icon {
+
+                                      font-size: 50px;
+                                      color: rgb(250, 0, 54);
+                                    }
+
+                                    #spotify {
+
+                                      font-size: 50px;
+                                      color: rgb(29, 180, 55);
+                                    }
+                                    
                                    
                                     .services-box:hover {
                                       background-color: #02225a;
@@ -375,12 +401,15 @@
                                     .contact-button {
                                       width: 160px;
                                       cursor: pointer;
+                                      padding: 0.7rem 1.3rem;
+                                      font-size: 20px;
                                       background: #2768d9;
                                       color: #fff;
                                       justify-content: center;
                                       text-transform: uppercase;
                                       letter-spacing: 1px;
                                       margin-left: 35%;
+                                      border-radius: 0.5rem;
                                     }
                                    
                                     .contact-button:hover {
